@@ -45,7 +45,10 @@ def predict():
     else:
         return app.response_class(
             response=json.dumps({
-                "message": "You don't have a heart disease."
+                "message": "You don't have a heart disease.",
+                                "precaution": [],
+                "has_diabetes": False,
+                'has_heart_disease': False,
             }),
             status=200,
             mimetype='application/json'
